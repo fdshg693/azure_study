@@ -74,3 +74,30 @@ variable "storage_account_name" {
 #   type        = list(string)
 #   default     = []
 # }
+
+# ============================================================================
+# Blobコンテナおよびアップロード用の変数
+# ============================================================================
+
+variable "container_name" {
+  description = "Blob Storageコンテナの名前。小文字、数字、ハイフンのみ使用可能"
+  type        = string
+  default     = "example-container"
+  
+  validation {
+    condition     = can(regex("^[a-z0-9-]{3,63}$", var.container_name))
+    error_message = "container_nameは小文字、数字、ハイフンのみで、3-63文字である必要があります。"
+  }
+}
+
+variable "blob_name" {
+  description = "アップロードするBlobの名前"
+  type        = string
+  default     = "sample.txt"
+}
+
+variable "local_file_path" {
+  description = "ローカルファイルシステム上のアップロード対象ファイルのパス"
+  type        = string
+  default     = "./sample.txt"
+}

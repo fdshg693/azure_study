@@ -50,3 +50,5 @@ Thumbs.db
 # Ignore any local variable files
 local.tfvars
 *.local.tfvars
+
+*.txt
