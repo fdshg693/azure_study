@@ -12,4 +12,5 @@ resource "azurerm_storage_blob" "example" {
   storage_container_name = azurerm_storage_container.example.name
   type                   = "Block"
   source                 = var.local_file_path
+  content_md5            = filemd5(var.local_file_path)  # ファイル内容変更の検出用
 }
