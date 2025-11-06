@@ -52,3 +52,6 @@ local.tfvars
 *.local.tfvars
 
 *.txt
+
+# 自分用のファイルは無視
+**maikuma**
