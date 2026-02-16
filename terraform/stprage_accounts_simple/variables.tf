@@ -101,3 +101,9 @@ variable "local_file_path" {
   type        = string
   default     = "./sample.txt"
 }
+
+variable "sas_token_expiry" {
+  description = "SASトークンの有効期間（Go duration形式: 24h, 168h, 720hなど）"
+  type        = string
+  default     = "24h"
+}

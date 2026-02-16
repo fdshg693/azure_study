@@ -132,23 +132,3 @@ resource "azurerm_storage_account" "example" {
   #   Project     = "StorageExample"
   # }
 }
-
-# ----------------------------------------------------------------------------
-# 出力値の定義（オプション）
-# ----------------------------------------------------------------------------
-# 作成されたリソースの情報を出力します
-# output "storage_account_id" {
-#   description = "Storage AccountのリソースID"
-#   value       = azurerm_storage_account.example.id
-# }
-
-# output "storage_account_primary_blob_endpoint" {
-#   description = "Blobストレージのプライマリエンドポイント"
-#   value       = azurerm_storage_account.example.primary_blob_endpoint
-# }
-
-# output "storage_account_primary_access_key" {
-#   description = "Storage Accountのプライマリアクセスキー"
-#   value       = azurerm_storage_account.example.primary_access_key
-#   sensitive   = true  # 機密情報として扱う
-# }
