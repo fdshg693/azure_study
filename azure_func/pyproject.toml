@@ -1,8 +1,0 @@
-[tool.uv.workspace]
-members = ["projects/*"]
-
-[tool.uv]
-dev-dependencies = [
-    "pytest>=9.0.2",
-    "requests>=2.32.5",
-]

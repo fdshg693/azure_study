@@ -1,0 +1,28 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(az account show:*)",
+      "Bash(az appservice list-locations:*)",
+      "Bash(az provider show:*)",
+      "Bash(az vm list-usage:*)",
+      "Bash(az functionapp:*)",
+      "Bash(az extension list:*)",
+      "Bash(az extension add:*)",
+      "Bash(az quota list:*)",
+      "Bash(az quota show:*)",
+      "Bash(az rest:*)",
+      "Bash(python:*)",
+      "Bash(az provider register:*)",
+      "Bash(az resource list:*)",
+      "Bash(az storage account create:*)",
+      "Bash(az appservice plan show:*)",
+      "Bash(az monitor app-insights component delete:*)",
+      "Bash(terraform state list:*)",
+      "Bash(terraform state rm:*)",
+      "Bash(terraform import:*)",
+      "Bash(*)",
+      "Bash(MSYS_NO_PATHCONV=1 terraform import:*)",
+      "Bash(terraform plan:*)"
+    ]
+  }
+}

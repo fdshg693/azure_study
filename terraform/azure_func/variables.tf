@@ -75,7 +75,7 @@ variable "python_version" {
 variable "service_plan_name" {
   description = "App Service Plan（関数ホスティングプラン）の名前"
   type        = string
-  default     = "plan-func-dev-seiwan"
+  default     = "JapanEastLinuxDynamicPlan"
 }
 
 variable "service_plan_sku" {
@@ -100,7 +100,7 @@ variable "service_plan_sku" {
 variable "application_insights_name" {
   description = "Application Insights（監視・ログ分析）リソースの名前"
   type        = string
-  default     = "appi-func-dev-seiwan"
+  default     = "func-simple-dev-seiwan"
 }
 
 # ----------------------------------------------------------------------------

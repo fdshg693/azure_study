@@ -14,6 +14,9 @@ resource "azurerm_application_insights" "func" {
   # other: その他のアプリケーション
   application_type = "web"
 
+  # Log Analytics ワークスペース（一度設定すると削除不可）
+  workspace_id = "/subscriptions/4b6965ad-aae6-499a-82e6-320669f7d2a5/resourceGroups/DefaultResourceGroup-EJP/providers/Microsoft.OperationalInsights/workspaces/DefaultWorkspace-4b6965ad-aae6-499a-82e6-320669f7d2a5-EJP"
+
   tags = var.tags
 }
 
